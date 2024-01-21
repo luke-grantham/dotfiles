@@ -1,0 +1,9 @@
+[user]
+	name = Luke Grantham
+    email = luke.grantham2@gmail.com
+
+[init]
+    defaultBranch = main
+
+[pull]
+	rebase = false
