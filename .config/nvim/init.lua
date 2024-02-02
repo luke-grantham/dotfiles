@@ -1,3 +1,5 @@
+require("remap")
+
 vim.opt.relativenumber = true
 vim.opt.number = true
 vim.opt.tabstop = 4
@@ -30,10 +32,10 @@ plugins = {
         lazy = false,
         priority = 1000,
         opts = {},
-    }
+    },
+    "doums/darcula"
 }
 
-vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappings are correct
 require("lazy").setup(plugins)
 --
 -- end package manager
@@ -41,4 +43,6 @@ require("lazy").setup(plugins)
 
 
 -- Post Plugin Setup
-vim.cmd[[colorscheme tokyonight-moon]]
+--vim.cmd[[colorscheme tokyonight-moon]]
+vim.cmd[[colorscheme darcula]]
+vim.opt.termguicolors = true
