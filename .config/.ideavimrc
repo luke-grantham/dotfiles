@@ -10,3 +10,8 @@ noremap <C-d> <C-d>zz
 noremap <C-u> <C-u>zz
 noremap n nzz
 noremap N Nzz
+
+set visualbell
+
+noremap L $
+noremap H _
