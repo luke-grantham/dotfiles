@@ -17,3 +17,6 @@ set expandtab
 set shiftwidth=4
 set autoindent
 set cursorline
+
+noremap L $
+noremap H _
