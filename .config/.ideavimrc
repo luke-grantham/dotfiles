@@ -4,7 +4,15 @@ noremap <Left> <Nop>
 noremap <Right> <Nop>
 set relativenumber
 set number
+set scrolloff=5
+let mapleader =" "
 let @c = '_i//<Esc>j_'
+
+
+noremap <leader>= vi{=
+
+# cursor will remain on same line after visual yank
+vmap y ygv<Esc>
 
 noremap <C-d> <C-d>zz
 noremap <C-u> <C-u>zz
@@ -15,3 +23,7 @@ set visualbell
 
 noremap L $
 noremap H _
+nmap K <Action>(MethodUp)
+nmap J <Action>(MethodDown)
+
+nnoremap <Leader>h :noh<Enter>
