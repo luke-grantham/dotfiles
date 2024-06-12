@@ -27,3 +27,8 @@ nmap K <Action>(MethodUp)
 nmap J <Action>(MethodDown)
 
 nnoremap <Leader>h :noh<Enter>
+
+nmap <Leader>s <Action>(Switcher)
+nmap <Leader>r <Action>(RenameElement)
+nmap <Leader>p viwp
+vnoremap p "_dP
