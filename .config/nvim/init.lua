@@ -33,10 +33,21 @@ plugins = {
         priority = 1000,
         opts = {},
     },
-    "doums/darcula"
+    "doums/darcula",
+    {
+    "nvim-telescope/telescope.nvim",
+    tag = "0.1.6",
+    dependencies = { "nvim-lua/plenary.nvim" }
+    }
+
 }
 
 require("lazy").setup(plugins)
+
+-- Telescope setup (optional)
+local telescope = require("telescope")
+telescope.setup{}
+
 --
 -- end package manager
 -- --
