@@ -4,12 +4,14 @@ noremap <Left> <Nop>
 noremap <Right> <Nop>
 set relativenumber
 set number
-set scrolloff=5
 let mapleader =" "
 let @c = '_i//<Esc>j_'
 
-
 noremap <leader>= vi{=
+noremap <leader>a ggVG
+
+set commentary
+set surround
 
 # cursor will remain on same line after visual yank
 vmap y ygv<Esc>
@@ -28,9 +30,22 @@ nmap J <Action>(MethodDown)
 
 nnoremap <Leader>h :noh<Enter>
 
-nmap <Leader>n df(f)x
 nmap <Leader>s <Action>(Switcher)
 nmap <Leader>r <Action>(RenameElement)
 nmap <Leader>p viwp
 nmap <Leader>P "+p
+nmap <Leader>f <Action>(GotoNextError)
+nmap <Leader>n df(f)x
+nmap <Leader>h <Action>(PreviousTab)
+nmap <Leader>l <Action>(NextTab)
+nmap <Leader>H <Action>(PrevSplitter)
+nmap <Leader>L <Action>(NextSplitter)
+
+map <C-o> <Action>(Back)
+map <C-i> <Action>(Forward)
+nmap g; <Action>(JumpToLastChange)
+nmap g, <Action>(JumpToNextChange)
+
+
+
 vnoremap p "_dP
